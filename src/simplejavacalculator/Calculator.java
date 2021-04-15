@@ -82,45 +82,45 @@ public class Calculator {
 
         return NaN;
     }
-//
-//    public Double calculateMono(MonoOperatorModes newMode, Double num) {
-//        if (newMode == MonoOperatorModes.square) {
-//            return num * num;
-//        }
-//        if (newMode == MonoOperatorModes.squareRoot) {
-//            return Math.sqrt(num);
-//        }
-//        if (newMode == MonoOperatorModes.oneDividedBy) {
-//            return 1 / num;
-//        }
-//        if (newMode == MonoOperatorModes.cos) {
-//            return Math.cos(Math.toRadians(num));
-//        }
-//        if (newMode == MonoOperatorModes.sin) {
-//            return Math.sin(Math.toRadians(num));
-//        }
-//        if (newMode == MonoOperatorModes.tan) {
-//            if (num == 0 || num % 180 == 0) {
-//                return 0.0;
-//            }
-//            if (num % 90 == 0 && num % 180 != 0) {
-//                return NaN;
-//            }
-//
-//            return Math.tan(Math.toRadians(num));
-//        }
-//        if (newMode == MonoOperatorModes.log) {
-//            return log10(num);
-//        }
-//        if (newMode == MonoOperatorModes.rate) {
-//           return num / 100;
-//        }
-//        if (newMode == MonoOperatorModes.abs){
-//            return Math.abs(num);
-//        }
-//
-//        // never reach
-//        throw new Error();
-//    }
+
+    public Double calculateMono(MonoOperatorModes newMode, Double num) {
+        if (newMode == MonoOperatorModes.square) {
+            return num * num;
+        }
+        if (newMode == MonoOperatorModes.squareRoot) {
+            return Math.sqrt(num);
+        }
+        if (newMode == MonoOperatorModes.oneDividedBy) {
+            return 1 / num;
+        }
+        if (newMode == MonoOperatorModes.cos) {
+            return Math.cos(Math.toRadians(num));
+        }
+        if (newMode == MonoOperatorModes.sin) {
+            return Math.sin(Math.toRadians(num));
+        }
+        if (newMode == MonoOperatorModes.tan) {
+            if (num == 0 || num % 180 == 0) {
+                return 0.0;
+            }
+            if (num % 90 == 0 && num % 180 != 0) {
+                return NaN;
+            }
+
+            return Math.tan(Math.toRadians(num));
+        }
+        if (newMode == MonoOperatorModes.log) {
+            return log10(num);
+        }
+        if (newMode == MonoOperatorModes.rate) {
+           return num / 100;
+        }
+        if (newMode == MonoOperatorModes.abs){
+            return Math.abs(num);
+        }
+
+        // never reach
+        throw new Error();
+    }
 
 }
